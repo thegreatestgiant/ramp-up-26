@@ -34,7 +34,8 @@ def delta():
 def echo():
     with open("theFile.txt", "w") as file:
         for x in [r.randint(1, 40) for _ in range(20)]:
-            file.write(x)
+            s = str(x)
+            file.write(s)
 
 
 def foxtrot(number):
@@ -43,7 +44,7 @@ def foxtrot(number):
 
 def fav_color():
     color = input("What's your favorate color?")
-    color = color.tolower()
+    color = color.lower()
     if color == "blue":
         print("Great choice.")
     elif color == "red":
@@ -56,7 +57,7 @@ def fav_color():
 
 def fav_color2():
     color = input("What's your favorate color?")
-    match color.tolower():
+    match color.lower():
         case "blue":
             print("Great choice.")
         case "red":
@@ -90,7 +91,7 @@ def hotel():
 
 
 def india(x):
-    for i in x:
+    for _ in x:
         if x % 2 == 0:
             print(0)
         else:
