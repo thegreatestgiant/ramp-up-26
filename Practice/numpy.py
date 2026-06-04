@@ -10,3 +10,16 @@ print(np.union1d(a, b))
 c = np.stack((np.arange(1, 6), np.arange(6, 11), np.arange(11, 16)), axis=1)
 
 three = c.flatten("F")
+
+
+col1 = c[:, 0]
+col2 = c[:, 1]
+col3 = c[:, 2]
+
+d1 = col1[:, np.newaxis, np.newaxis]
+d2 = col2[np.newaxis, :, np.newaxis]
+d3 = col3[
+    np.newaxis,
+    np.newaxis,
+    :,
+]
