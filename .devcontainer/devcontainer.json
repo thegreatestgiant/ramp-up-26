@@ -1,0 +1,12 @@
+{
+    "name": "My Anaconda Environment",
+    "image": "mcr.microsoft.com/devcontainers/anaconda:3",
+    "features": {
+        "ghcr.io/duduribeiro/devcontainer-features/neovim:1": {
+            "version": "stable"
+        }
+    },
+    "runArgs": [
+        "-p", "8081:8081"
+    ],
+}
